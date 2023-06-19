@@ -1,0 +1,24 @@
+modLoader="javafml" #mandatory
+loaderVersion="${loader_version_range}" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="MIT"
+
+[[mods]] #mandatory
+modId="universi" #mandatory
+version="0.0.1" #mandatory
+displayName="Universi" #mandatory
+authors="Olly Holcombe" #optional
+description='''${mod_description}'''
+
+[[dependencies.universi]]
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="${forge_version_range}" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.universi]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
